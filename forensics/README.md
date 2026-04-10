@@ -191,73 +191,57 @@ Buka suricata.zip ada log, dan buka netcat
 =========================================================
           WELCOME TO THE POROS FORENSICS CHALLENGE!
 =========================================================
----------------------------------------------------------
   Question 1/10
   What's the victim's IP address?
   Format: xx.xx.xx.xx
----------------------------------------------------------
 Answer: 10.10.10.50
 [+] Correct!
----------------------------------------------------------
+
   Question 2/10
   What's the attacker IP address?
   Format: xx.xx.xx.xx
----------------------------------------------------------
 Answer: 10.10.10.100
 [+] Correct!
 
----------------------------------------------------------
   Question 3/10
   There are 3 tools that used by attacker, what are they? (order it alphabetically)
   Format: abc,def,ghi
----------------------------------------------------------
 Answer: hping3,nmap,sqlmap
 [+] Correct!
 
----------------------------------------------------------
   Question 4/10
   There is a vulnerable plugin exploited by the attacker, what's the name of the plugin?
   Format: lowercase-letters
----------------------------------------------------------
 Answer: easy-quotes
 [+] Correct!
 
----------------------------------------------------------
   Question 5/10
   What's the CVE ID of the vulnerable plugin?
   Format: CVE-XXXX-XXXX
----------------------------------------------------------
 Answer:  CVE-2025-26943
 [+] Correct!
 
----------------------------------------------------------
   Question 6/10
   When exploitation of vulnerable plugin started?
   Format: DD/MM/YYYY HH:MM:SS
----------------------------------------------------------
 Answer: 12/03/2026 16:52:39
 [+] Correct!
 
----------------------------------------------------------
   Question 7/10
   What's the username exfiltrated by the attacker?
   Format: -
----------------------------------------------------------
 Answer: 2byteFansClub
 [+] Correct!
 
----------------------------------------------------------
+
   Question 8/10
   What's the password hash exfiltrated by the attacker?
   Format: $algorithm$hash
----------------------------------------------------------
 Answer: $P$BDVrT8ijki8iH97aVCY25ZXJOSMtlL/
 [+] Correct!
 
----------------------------------------------------------
   Question 9/10
   What's the password cracked by the attacker?
   Format: -
----------------------------------------------------------
 Answer: -
 
