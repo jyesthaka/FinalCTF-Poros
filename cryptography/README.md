@@ -2,6 +2,7 @@
 
 ### Shannons Secret
 Author: RFB
+
 499 pts
 
 Diberikan c1. C2 dan hint (ciphertext)
