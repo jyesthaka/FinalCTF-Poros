@@ -124,7 +124,7 @@ Cara: Di go.zenc.cc, tulisannya adalah @zenCipher namun jawabannya salah, dan ji
 Question 8/9
 Which city is the creator from?
 Format: Epstein Island
->>> Answer: South Tangerang
+Answer: South Tangerang
 Cara: Tidak langsung terlihat, tapi di go.zenc.cc ada opsi melihat CV dan di CVnya terpampang jelas bahwa ia dari South Tangerang 
 
 <img width="468" height="58" alt="image14" src="https://github.com/user-attachments/assets/ceeb42c1-831e-4614-b990-7d9d3dd30564" />
