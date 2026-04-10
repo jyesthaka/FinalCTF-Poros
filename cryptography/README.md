@@ -1,6 +1,6 @@
-# [499 pts] Cryptography
+# Cryptography
 
-### Shannons Secret
+### [499 pts] Shannons Secret
 Author: RFB
 
 Diberikan c1. C2 dan hint (ciphertext)
