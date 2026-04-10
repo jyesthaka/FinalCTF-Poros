@@ -187,6 +187,7 @@ PorosCTF{1NGiN_m3Nj4Di_bLUE_tE4M_N4mUn_en9g4n_M3mbACa_tRaFfIC}
 ### [Unsolved] ey DIH es
 
 Buka suricata.zip ada log, dan buka netcat
+
 =========================================================
           WELCOME TO THE POROS FORENSICS CHALLENGE!
 =========================================================
@@ -258,5 +259,5 @@ Answer: $P$BDVrT8ijki8iH97aVCY25ZXJOSMtlL/
   What's the password cracked by the attacker?
   Format: -
 ---------------------------------------------------------
->>> Answer:
+Answer: -
 
