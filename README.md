@@ -1,6 +1,6 @@
 # FinalCTF-Poros
 
-Writeups for the **POROS Final CTF Stage**.
+My write-up for every challenge I solved during POROS CTF Final.
 
 ---
 
@@ -18,4 +18,5 @@ Writeups for the **POROS Final CTF Stage**.
 ---
 
 ## About
-> CTF writeups document how a challenge was solved — the tools used, the thought process, and the vulnerability found. These are written for learning purposes.
+
+Recently got accepted into POROS. The Incubation and Final process of the selection was very productive and here is my step-by-step on how I got each flag.
