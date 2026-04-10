@@ -1,9 +1,7 @@
-# Cryptography
+# [499 pts] Cryptography
 
 ### Shannons Secret
 Author: RFB
-
-499 pts
 
 Diberikan c1. C2 dan hint (ciphertext)
 Hasil decode hint Base64:
